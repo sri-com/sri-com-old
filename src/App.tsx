@@ -1,5 +1,6 @@
 import './App.css'
 import Content from './comp/Content';
+import Home from './comp/Home/Home';
 import NavBar from './comp/NavBar/NavBar';
 import RandomBlob from './RandomBlob/RandomBlob';
 
@@ -13,6 +14,7 @@ function App() {
     return (
         <div className='App w-full h-full bg-cbase' id="App">
             <RandomBlob num_of_blob={50} fill_color_scheme={scheme} canvas_width={width * 0.98} canvas_height={height * 0.98} />
+            <Content />
             <NavBar />
         </div>
     );

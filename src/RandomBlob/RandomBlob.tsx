@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import { useRef } from 'react';
 import StickBlob from './StickBlob';
 import CircleBlob from './CircleBlob';
+import BgTriangleBlob from './BgTriangleBlob';
 
 interface RandomBlobProp {
     num_of_blob: number
@@ -88,10 +89,11 @@ function RandomBlob(prop: RandomBlobProp) {
             rotate={getRandomeNumBtw(-360, 360)}
             constraintsRef={constraintsRef} />)
     }
-
     return (
 
         <div className='RandomBlobContainer w-full h-full'>
+            <BgTriangleBlob />
+            <BgTriangleBlob />
             <motion.div ref={constraintsRef} className="w-full h-full">
                 {BlobArr}
             </motion.div>

@@ -1,0 +1,19 @@
+.BgTriangleLeft {
+    position: absolute;
+    left: -315px;
+    top: -100px;
+    width: 100%;
+    aspect-ratio: 1;
+    clip-path: polygon(100.00% 50.00%,25.00% 93.30%,25.00% 6.70%);
+
+}
+
+.BgTriangleRight {
+    position: absolute;
+    left: 650px;
+    top: 0px;
+    width: 100%;
+    aspect-ratio: 1;
+    clip-path: polygon(100.00% 50.00%,25.00% 93.30%,25.00% 6.70%);
+    rotate: 180deg;
+}
