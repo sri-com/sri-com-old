@@ -1,10 +1,18 @@
-import { warn } from 'console';
 import './BgTriangleBlob.css'
 
-function BgTriangleBlob() {
+interface BgTriangleBlobProp {
+    top: number
+    left: number
+}
+
+function BgTriangleBlob(prop: BgTriangleBlobProp) {
+    let styles = {
+        top: `${prop.top}px`,
+        left: `${prop.left}px`
+    }
 
     return (
-        <div className="BgTriangle absolute w-[80%] flex justify-around">
+        <div className="BgTriangle absolute w-[80%] flex justify-around" style={styles}>
             <svg
                 className='BgTriangleLeft'
                 width="1000px"

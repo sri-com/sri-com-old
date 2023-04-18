@@ -2,8 +2,8 @@ import pic from './../../assets/profile.png'
 
 function ProfilePic() {
     return (
-        <div className='ImageContainer w-[40%] h-full float-right top-14'>
-            <img src={pic} className="w-full h-[80%]" />
+        <div className='ImageContainer w-[40%] float-right absolute top-[10%] right-7'>
+            <img src={pic} className="h-[80%]" />
         </div>
     )
 }
