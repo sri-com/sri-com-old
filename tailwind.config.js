@@ -34,6 +34,10 @@ export default {
             "cmantle": "#181825",
             "ccrust": "#11111b",
         },
+        fontFamily: {
+            "holtwood": ['Holtwood One SC', 'serif'],
+            "jetbrains": ['JetBrains Mono', 'monospace']
+        },
     },
     plugins: [],
 }
