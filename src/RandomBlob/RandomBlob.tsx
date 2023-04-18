@@ -93,7 +93,7 @@ function RandomBlob(prop: RandomBlobProp) {
 
         <div className='RandomBlobContainer w-full h-full'>
             <BgTriangleBlob top={100} left={50} />
-            <BgTriangleBlob top={1800} left={500} />
+            <BgTriangleBlob top={1800} left={300} />
             <motion.div ref={constraintsRef} className="w-full h-full">
                 {BlobArr}
             </motion.div>

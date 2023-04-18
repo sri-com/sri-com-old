@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 function About() {
     return (
-        <div className='AboutContainer w-full h-screen flex items-center justify-around absolute top-[900px]'>
+        <div className='AboutContainer w-screen h-screen flex items-center justify-around absolute top-[900px]'>
             <div className='flex items-center justify-center h-full w-[70%] '>
                 <motion.div className='bg-ccrust w-[70%] h-[60%] opacity-60 rounded-3xl'>
                 </motion.div>
