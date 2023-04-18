@@ -5,6 +5,8 @@ interface CircleBlobProp {
     fill: String
     y: number
     x: number
+    to_y: number
+    to_x: number
     width: number
     constraintsRef: any
     rotate: number
@@ -24,6 +26,17 @@ function CircleBlob(prop: CircleBlobProp) {
         borderRadius: `50%`
     }
 
+    const motionProps = {
+        animate: {
+            x: [0, prop.to_x, 0],
+            y: [0, prop.to_y, 0],
+            transition: {
+                duration: 50,
+                ease: "linear",
+                repeat: Infinity
+            }
+        }
+    };
 
     return (
         <motion.div
@@ -31,6 +44,7 @@ function CircleBlob(prop: CircleBlobProp) {
             dragConstraints={prop.constraintsRef}
             whileDrag={{ scale: 1.5 }}
             style={styles}
+            {...motionProps}
         />
     );
 }
