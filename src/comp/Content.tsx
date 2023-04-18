@@ -3,6 +3,7 @@ import About from "./About/About"
 import Skills from "./Skills/Skills";
 import Blogs from "./Blogs/Blogs";
 import Footer from "./Footer/Footer";
+import NewsLetter from './NewsLetter/NewsLetter';
 
 function Content() {
     return (
@@ -12,6 +13,7 @@ function Content() {
             <Skills />
             <Blogs />
             <Footer />
+            <NewsLetter />
         </div>
     );
 }

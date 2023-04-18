@@ -9,7 +9,7 @@ function Skills() {
                 <p className='font-jetbrains text-9xl text-coverlay0'>Skills</p>
             </div>
             <div className='flex items-center justify-center h-full w-[70%] '>
-                <motion.div className='bg-ccrust w-[70%] h-[60%] opacity-60 rounded-3xl'>
+                <motion.div className='bg-ccrust w-[70%] h-[60%] opacity-60 rounded-3xl border-4 border-ctext'>
                 </motion.div>
             </div>
         </div>
