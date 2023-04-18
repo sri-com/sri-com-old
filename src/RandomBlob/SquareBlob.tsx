@@ -29,8 +29,9 @@ function SquareBlob(prop: SquareBlobProp) {
         animate: {
             x: [0, prop.to_x, 0, -1 * prop.to_x, 0],
             y: [0, prop.to_y, 0, -1 * prop.to_x, 0],
+            rotate: [prop.rotate, 0, -1 * prop.rotate],
             transition: {
-                duration: 10,
+                duration: 80,
                 ease: "linear",
                 repeat: Infinity
             }
