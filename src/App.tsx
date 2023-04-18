@@ -1,6 +1,5 @@
 import './App.css'
 import Content from './comp/Content';
-import Home from './comp/Home/Home';
 import NavBar from './comp/NavBar/NavBar';
 import RandomBlob from './RandomBlob/RandomBlob';
 
