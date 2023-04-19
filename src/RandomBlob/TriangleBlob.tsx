@@ -16,7 +16,6 @@ interface TriangleBlobProp {
 function TriangleBlob(prop: TriangleBlobProp) {
 
     var styles = {
-        position: `absolute`,
         backgroundColor: `transparent`,
         left: `${prop.x}px`,
         top: `${prop.y}px`,
@@ -42,6 +41,7 @@ function TriangleBlob(prop: TriangleBlobProp) {
 
     return (
         <motion.div
+            className='absolute'
             drag={true}
             dragConstraints={prop.constraintsRef}
             whileDrag={{ scale: 1.5 }}
