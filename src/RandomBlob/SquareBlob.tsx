@@ -16,13 +16,12 @@ interface SquareBlobProp {
 function SquareBlob(prop: SquareBlobProp) {
 
     var styles = {
-        position: `absolute`,
         backgroundColor: `${prop.fill}`,
         width: `${prop.width}px`,
         height: `${prop.width}px`,
         left: `${prop.x}px`,
         top: `${prop.y}px`,
-        rotate: `${prop.rotate}deg`,
+        rotate: `${prop.rotate}deg`
     }
 
     const motionProps = {
@@ -40,6 +39,7 @@ function SquareBlob(prop: SquareBlobProp) {
 
     return (
         <motion.div
+            className='absolute'
             drag={true}
             dragConstraints={prop.constraintsRef}
             whileDrag={{ scale: 1.5 }}

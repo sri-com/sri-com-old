@@ -16,7 +16,6 @@ interface CircleBlobProp {
 function CircleBlob(prop: CircleBlobProp) {
 
     var styles = {
-        position: `absolute`,
         backgroundColor: `${prop.fill}`,
         width: `${prop.width}px`,
         height: `${prop.width}px`,
@@ -40,6 +39,7 @@ function CircleBlob(prop: CircleBlobProp) {
 
     return (
         <motion.div
+            className='absolute'
             drag={true}
             dragConstraints={prop.constraintsRef}
             whileDrag={{ scale: 1.5 }}

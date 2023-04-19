@@ -16,13 +16,12 @@ interface StickBlobProp {
 function StickBlob(prop: StickBlobProp) {
 
     var styles = {
-        position: `absolute`,
         backgroundColor: `${prop.fill}`,
         width: `${prop.width}px`,
         height: `${prop.height}px`,
         left: `${prop.x}px`,
         top: `${prop.y}px`,
-        rotate: `${prop.rotate}deg`,
+        rotate: `${prop.rotate}deg`
     }
 
     const motionProps = {
@@ -39,6 +38,7 @@ function StickBlob(prop: StickBlobProp) {
 
     return (
         <motion.div
+            className='absolute'
             drag={true}
             dragConstraints={prop.constraintsRef}
             whileDrag={{ scale: 1.5 }}
