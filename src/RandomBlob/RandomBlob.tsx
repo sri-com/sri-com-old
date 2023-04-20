@@ -28,7 +28,7 @@ function get_random_displacement(x: number, max_x: number, min_x: number) {
 function RandomBlob(prop: RandomBlobProp) {
     const constraintsRef = useRef(null)
     let BlobArr: any[] = [];
-    let pad_val = 150;
+    let pad_val = 90;
     for (let i = 0; i < prop.num_of_blob; i++) {
         let x = getRandomeNumBtw(pad_val, prop.canvas_width - pad_val);
         let to_x = get_random_displacement(x, prop.canvas_width, 0)
