@@ -1,5 +1,6 @@
 import ProfilePic from './ProfilePic';
 import Welcome from './Welcome';
+import './Home.css'
 
 function Home() {
     return (

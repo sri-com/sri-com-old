@@ -2,7 +2,7 @@ import './Welcome.css'
 
 function Welcome() {
     return (
-        <div className="WelcomeContainer float-left w-[60%] top-14 h-full flex flex-col justify-center items-start pl-80">
+        <div className="WelcomeContainer float-left w-[60%] top-14 h-full flex flex-col justify-center items-start max-w-[90rem] max-h-[40rem]">
             <p className="WelcomeText text-5xl mt-[15%] text-ctext">Hi, I'm</p>
             <p className="WelcomeText text-6xl" id="NameText">Srivarshan</p>
             <p className="WelcomeText text-4xl pt-4 text-ctext">Computer Science Student</p>

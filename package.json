@@ -4,8 +4,8 @@
     "version": "0.0.0",
     "type": "module",
     "scripts": {
-        "dev": "vite",
-        "build": "tsc && vite build && mv dist/* ../server/static/",
+        "dev": "vite --host",
+        "build": "rm -rf ../server/static/* && tsc && vite build && mv dist/* ../server/static/",
         "preview": "vite preview"
     },
     "dependencies": {
