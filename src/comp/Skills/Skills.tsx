@@ -3,16 +3,17 @@ import { motion } from 'framer-motion'
 
 function Skills() {
     return (
-        <div className='SkillsContainer w-full h-screen flex items-center justify-around absolute top-[1800px]'>
+        <section className='SkillsContainer w-screen h-screen flex items-center justify-around absolute top-[calc(200vh)]'>
             <div className='SkillsBox flex flex-col justify-center items-center h-full w-[30%]'>
                 <p className='font-jetbrains text-4xl text-c-text '>Skills</p>
                 <p className='font-jetbrains text-9xl text-c-overlay0'>Skills</p>
             </div>
-            <div className='flex items-center justify-center h-full w-[70%] '>
-                <motion.div className='bg-c-crust w-[70%] h-[60%] opacity-60 rounded-3xl border-4 border-c-text' whileHover={{ scale: 1.2 }}>
+            <div className='SkillsContent flex items-center justify-center h-full w-[70%] '>
+                <motion.div className='SkillsMotionDiv bg-c-crust opacity-60 rounded-3xl border-4 border-c-text' whileHover={{ scale: 1.2 }}>
+
                 </motion.div>
             </div>
-        </div>
+        </section>
     )
 }
 
