@@ -7,8 +7,7 @@ import { motion } from "framer-motion"
 function NavBar() {
     return (
         <motion.div
-            className="NavBar w-full fixed h-14 top-0 bg-cbase flex items-center justify-around bg-opacity-95"
-        >
+            className="NavBar w-full fixed h-14 top-0 bg-c-base flex items-center justify-around bg-opacity-95">
             <NavbarLogo />
             <div className='flex items-center justify-around'>
                 <Navbarlist />
