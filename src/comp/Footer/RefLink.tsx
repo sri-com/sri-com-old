@@ -32,7 +32,7 @@ function RefLink() {
                     </svg>
                 </a>
             </div>
-            <p className="font-jetbrains text-ctext">Copyright 2023. All right Reserved</p>
+            <p className="font-jetbrains text-c-text">Copyright 2023. All right Reserved</p>
         </div >
     )
 }
