@@ -7,7 +7,7 @@ import NewsLetter from "./NewsLetter/NewsLetter";
 
 function Content() {
     return (
-        <div className="ContentContainer w-full h-full absolute top-14">
+        <div className="ContentContainer w-full h-full top-14 flex flex-col absolute">
             <Home />
             <About />
             <Skills />
