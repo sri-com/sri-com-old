@@ -8,7 +8,8 @@ interface BgTriangleBlobProp {
 function BgTriangleBlob(prop: BgTriangleBlobProp) {
     let styles = {
         top: `${prop.top}px`,
-        left: `${prop.left}px`
+        left: `${prop.left}px`,
+        fill: "fill-c-crust"
     }
 
     return (
@@ -22,8 +23,8 @@ function BgTriangleBlob(prop: BgTriangleBlobProp) {
                 id="svg225"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
+                    className='fill-c-crust'
                     id="Selection"
-                    fill="#11111b"
                     stroke="#11111b"
                     stroke-width="1"
                     d="m 27,27 c 0,0 18,8.69 18,8.69 0,0 62,30.05 62,30.05 0,0 157,76 157,76 0,0 611,295.52 611,295.52 0,0 190,92 190,92 0,0 62,30 62,30 0,0 45,21.74 45,21.74 0,0 0,2 0,2 0,0 -33,16.75 -33,16.75 0,0 -69,34.99 -69,34.99 0,0 -59,29.52 -
@@ -31,13 +32,13 @@ function BgTriangleBlob(prop: BgTriangleBlobProp) {
 ,-15 -1,-15 0,0 0,-376 0,-376 z" />
                 <path
                     id="Unnamed copy"
-                    fill="#11111b"
+                    className='fill-c-crust'
                     stroke="#11111bc"
                     stroke-width="1"
                     d="m 27,27 c 0,0 1.5,1135.5 1.5,1135.5 C 28.5,1162.5 1173,582 1173,582 1173,582 36,31.5 36,31.5" />
                 <path
                     id="Unnamed"
-                    fill="#11111b"
+                    className='fill-c-crust'
                     stroke="#11111b"
                     stroke-width="1"
                     d="m 27,27 c 0,0 1.5,1135.5 1.5,1135.5 C 28.5,1162.5 1173,582 1173,582 1173,582 36,31.5 36,31.5" />
@@ -52,7 +53,7 @@ function BgTriangleBlob(prop: BgTriangleBlobProp) {
                 xmlns="http://www.w3.org/2000/svg">
                 <path
                     id="Selection"
-                    fill="#11111b"
+                    className='fill-c-crust'
                     stroke="#11111b"
                     stroke-width="1"
                     d="m 27,27 c 0,0 18,8.69 18,8.69 0,0 62,30.05 62,30.05 0,0 157,76 157,76 0,0 611,295.52 611,295.52 0,0 190,92 190,92 0,0 62,30 62,30 0,0 45,21.74 45,21.74 0,0 0,2 0,2 0,0 -33,16.75 -33,16.75 0,0 -69,34.99 -69,34.99 0,0 -59,29.52 -
@@ -60,13 +61,13 @@ function BgTriangleBlob(prop: BgTriangleBlobProp) {
 ,-15 -1,-15 0,0 0,-376 0,-376 z" />
                 <path
                     id="Unnamed copy"
-                    fill="#11111b"
+                    className='fill-c-crust'
                     stroke="#11111bc"
                     stroke-width="1"
                     d="m 27,27 c 0,0 1.5,1135.5 1.5,1135.5 C 28.5,1162.5 1173,582 1173,582 1173,582 36,31.5 36,31.5" />
                 <path
                     id="Unnamed"
-                    fill="#11111b"
+                    className='fill-c-crust'
                     stroke="#11111b"
                     stroke-width="1"
                     d="m 27,27 c 0,0 1.5,1135.5 1.5,1135.5 C 28.5,1162.5 1173,582 1173,582 1173,582 36,31.5 36,31.5" />

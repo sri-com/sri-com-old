@@ -5,11 +5,11 @@ import RefLink from './RefLink';
 
 function Footer() {
     return (
-        <div className='absolute bottom-0 w-full h-[50%] bg-c-crust top-[292rem]'>
+        <section className='Footer absolute h-[50%] w-[100%] bg-c-crust top-[calc(550vh_-_50%_-_3.5rem)] '>
             <FooterLogo />
             <RefLink />
             <MadeWithLove />
-        </div>
+        </section>
     );
 }
 
