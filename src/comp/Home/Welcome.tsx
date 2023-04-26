@@ -10,9 +10,6 @@ function Welcome() {
                 &emsp; &emsp; Greetings! I'm Srivarshan - a computer science enthusiast and lifelong learner. I'm passionate about exploring the latest technologies and figuring out how they can be applied to real-world problems. Currently, I'm focused on expanding my knowledge of computer vision, machine learning, web API development, and low-level programming. I love to experiment with different programming languages, and CPP and Rust are two of my favorites.
                 <br />
                 <br />
-                &emsp; &emsp; When I'm not busy coding, I enjoy spending time with my family, playing sports, and reading up on the latest developments in the tech world. I find that these hobbies help me stay grounded and recharge my creative batteries.
-                <br />
-                <br />
                 &emsp; &emsp; I created this website as a platform to share my experiences and insights with other tech enthusiasts. I'm always on the lookout for exciting new projects and collaborations, so don't hesitate to get in touch if you'd like to connect!
             </p>
         </div>

@@ -1,5 +1,4 @@
 import './Skills.css'
-import { motion } from 'framer-motion'
 
 function Skills() {
     return (
@@ -9,9 +8,9 @@ function Skills() {
                 <p className='font-jetbrains text-9xl text-c-overlay0'>Skills</p>
             </div>
             <div className='SkillsContent flex items-center justify-center h-full w-[70%] '>
-                <motion.div className='SkillsMotionDiv bg-c-crust opacity-60 rounded-3xl border-4 border-c-text' whileHover={{ scale: 1.2 }}>
+                <div className='SkillsMotionDiv bg-c-crust opacity-60 rounded-3xl border-4 border-c-text'>
 
-                </motion.div>
+                </div>
             </div>
         </section>
     )
