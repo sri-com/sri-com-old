@@ -29,7 +29,7 @@ function StickBlob(prop: StickBlobProp) {
             x: [0, prop.to_x, 0],
             y: [0, prop.to_y, 0],
             transition: {
-                duration: 50,
+                duration: 40,
                 ease: "linear",
                 repeat: Infinity
             }
