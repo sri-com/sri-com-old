@@ -1,0 +1,59 @@
+@media only screen and (min-width: 1300px){
+    .AboutContainer {
+    }
+
+    .AboutContent {
+        width: 70%;
+        height: 100%;
+    }
+
+    .AboutBox {
+        width: 100%;
+        height: 100%;
+    }
+
+    .AboutMotionDiv{
+        width: 70%;
+        height: 70%;
+    }
+
+    .sAbout {
+        font-size: 2.25rem;
+    }
+
+    .bAbout {
+        font-size: 8rem;
+    }
+}
+
+@media only screen and (max-width: 1300px){
+    .AboutContainer {
+        flex-direction: column;
+    }
+
+    .AboutContent {
+        order: 1;
+        width: 100%;
+        height: 70%;
+    }
+
+    .AboutMotionDiv{
+        width: 100%;
+        height: 100%;
+    }
+
+    .AboutBox {
+        width: 100%;
+        height: 30%;
+    }
+
+    .sAbout {
+        font-size: 2.25rem;
+        line-height: 1rem;
+    }
+
+    .bAbout {
+        font-size: 8rem;
+        line-height: 7rem;
+    }
+}
