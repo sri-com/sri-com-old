@@ -32,7 +32,7 @@ function TriangleBlob(prop: TriangleBlobProp) {
             x: [0, prop.to_x, 0],
             y: [0, prop.to_y, 0],
             transition: {
-                duration: 70,
+                duration: 40,
                 ease: "linear",
                 repeat: Infinity
             }

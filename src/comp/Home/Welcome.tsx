@@ -7,7 +7,10 @@ function Welcome() {
             <p className="WelcomeText text-6xl" id="NameText">Srivarshan</p>
             <p className="WelcomeText text-4xl my-2">Computer Science Student</p>
             <p className="WelcomeTextPara font-jetbrains my-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam varius urna id orci pharetra, non rhoncus est consectetur. Fusce libero massa, placerat vitae ipsum in, scelerisque vulputate elit. Proin tempor, nunc in ornare dictum, sem libero blandit tellus, a mattis quam dui nec mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut a interdum tortor. Integer accumsan, mauris eget blandit pellentesque, dolor est vestibulum ex
+                &emsp; &emsp; Greetings! I'm Srivarshan - a computer science enthusiast and lifelong learner. I'm passionate about exploring the latest technologies and figuring out how they can be applied to real-world problems. Currently, I'm focused on expanding my knowledge of computer vision, machine learning, web API development, and low-level programming. I love to experiment with different programming languages, and CPP and Rust are two of my favorites.
+                <br />
+                <br />
+                &emsp; &emsp; I created this website as a platform to share my experiences and insights with other tech enthusiasts. I'm always on the lookout for exciting new projects and collaborations, so don't hesitate to get in touch if you'd like to connect!
             </p>
         </div>
     )
