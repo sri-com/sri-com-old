@@ -1,7 +1,6 @@
-export default {
-    mode: 'jit',
-    plugins: {
-        tailwindcss: {},
-        autoprefixer: {},
-    },
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
 }
