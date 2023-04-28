@@ -1,38 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+
+# Personal Profile and Blog Website
+
+This is a website built using React, Next.js, Tailwind CSS and TypeScript. The website contains information about my personal profile and blog posts.
 
 ## Getting Started
 
-First, run the development server:
+To run the code, follow the steps below:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+1. Clone the repository:
+
+```
+git clone https://github.com/your-username/personal-profile-blog-website.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install the required packages using either yarn or npm:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Using yarn:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```
+cd personal-profile-blog-website
+yarn
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Using npm:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```
+cd personal-profile-blog-website
+npm install
+```
 
-## Learn More
+3. Start the development server:
 
-To learn more about Next.js, take a look at the following resources:
+Using yarn:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+yarn dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Using npm:
 
-## Deploy on Vercel
+```
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The website will now be running at [http://localhost:3000](http://localhost:3000).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Packages Used
+
+The following packages were used in building this website:
+
+- React
+- Next.js
+- Tailwind CSS
+- TypeScript
+
+All of these packages are included as dependencies in the `package.json` file and will be installed automatically when you run `yarn` or `npm install`.
