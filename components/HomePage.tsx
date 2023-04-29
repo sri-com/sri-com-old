@@ -1,8 +1,7 @@
 import Content from './HomePage/comp/Content';
 import NavBar from './HomePage/comp/NavBar/NavBar';
 import RandomBlob from './HomePage/RandomBlob/RandomBlob';
-import { useState, useRef, useEffect, useLayoutEffect } from 'react';
-
+import { useState, useRef, useEffect, useLayoutEffect, MutableRefObject } from 'react';
 function HomePage() {
     const [theme, setTheme] = useState("c-mocha")
     const themeRef = useRef(theme)
@@ -19,7 +18,7 @@ function HomePage() {
             setThemeRef.current('c-mocha');
         }
     };
-    const ref = useRef(null);
+    const ref = useRef() as MutableRefObject<HTMLDivElement>;
     const [width, setWidth] = useState(0);
     const [height, setHeight] = useState(0);
 
