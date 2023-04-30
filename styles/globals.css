@@ -8,11 +8,6 @@
     box-sizing: border-box;
 }
 
-body {
-    width: 100vw;
-    height: 550vh;
-}
-
 .BgTriangle svg{
     position: absolute;
     float:left;
@@ -87,7 +82,7 @@ body {
 }
 
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 1500px) {
 
     .Home {
         display: grid;
@@ -111,16 +106,18 @@ body {
     }
 }
 
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: 1500px){
     .Home {
         display: flex;
         flex-direction: column-reverse;
         position: absolute;
+        align-items: center;
     }
 
 
     .ImageContainer img {
         width: 50%;
+        display: none;
     }
 
 }
@@ -248,3 +245,4 @@ input[type="checkbox"]:checked ~ .check:after{
     }
 
 }
+
