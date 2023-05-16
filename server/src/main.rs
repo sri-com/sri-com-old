@@ -1,42 +1,48 @@
-use rocket::{get, routes, launch};
-use rocket::fs::NamedFile;
-use rocket::form::FromForm;
-use std::path::{Path, PathBuf};
+use actix_web::{get, web, Responder, HttpServer, App};
+use actix_files::NamedFile;
+use actix_web::middleware::Logger;
+use env_logger::Env;
+use tracing_actix_web::TracingLogger;
+use serde::Deserialize;
 
 #[get("/")]
-async fn index() -> Option<NamedFile> {
-    NamedFile::open("./../.next/server/pages/index.html").await.ok()
+async fn index() -> impl Responder { 
+    NamedFile::open_async("../.next/server/pages/index.html").await
 }
 
-#[get("/<file..>")]
-async fn files(file: PathBuf) -> Option<NamedFile> {
-    NamedFile::open(Path::new(&format!("./../.next/{}",file.to_str().unwrap()))).await.ok()
+#[get("/_next/{filename:.*}")]
+async fn other_files(filename: web::Path<String>) -> impl Responder { 
+    let file_path = format!("../.next/{}",filename.to_string());
+    println!("{}",file_path);
+
+    NamedFile::open_async(file_path).await
 }
 
-#[derive(FromForm)]
-struct ImageParams {
-    url: Option<String>,
+#[derive(Deserialize,Debug)]
+struct ImageRequest {
+    url: String,
     w: Option<u32>,
     q: Option<u8>,
 }
 
-#[get("/image?<image_params..>")]
-async fn serve_image(image_params: ImageParams) -> Option<NamedFile> {
-    let url = image_params.url.expect("Missing 'url' parameter");
-    let w = image_params.w.unwrap_or(640);
-    let q = image_params.q.unwrap_or(75);
+#[get["_next/image"]]
+async fn image_req(image_request: web::Query<ImageRequest>) -> impl Responder {
 
-    println!("{}-{}-{}",&url[2..],w,q);
-
-    // Serve the file as a response.
-    NamedFile::open(Path::new(&format!("./../.{}",&url[2..]))).await.ok()
+    let image_path = format!("../.next/{}",&image_request.url[7..]);
+    NamedFile::open_async(image_path).await
 }
 
-#[launch]
-fn rocket() -> _ {
-    rocket::build()
-        .mount("/", routes![index])
-        .mount("/_next", routes![serve_image])
-        .mount("/_next", routes![files])
-        .mount("/_next", routes![files])
+
+#[actix_web::main]
+async fn main() -> std::io::Result<()> {
+    HttpServer::new(|| {
+        App::new()
+            .service(index)
+            .service(image_req)
+            .service(other_files)
+    })
+    .workers(12)
+    .bind("127.0.0.1:8000")?
+    .run()
+    .await
 }
